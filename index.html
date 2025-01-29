@@ -190,11 +190,20 @@
         }
 
         .popup-content .facebook-logo {
-            background-image: url('path_to_facebook_logo.png');
+            background-image: url('popups/fbLogo.png');
+            height: 30px;
+            width: 30px;
+            border-radius: 50px;
+            animation: float 5s ease-in-out infinite;
         }
 
         .popup-content .gmail-logo {
-            background-image: url('path_to_gmail_logo.png');
+            background-image: url('popups/gmaiLogo.png');
+            height: 30px;
+            width: 30px;
+            animation: float 5s ease-in-out infinite;
+            animation-delay: 1.5s;
+            
         }
 
         .popup-content .popup-icon:hover {
@@ -210,6 +219,11 @@
             position: absolute;
             top: 10px;
             right: 10px;
+        }
+        .card-footer{
+            padding-right: 1px;
+            background-color: #13030375;
+            opacity: 0.7;
         }
        
     </style>
@@ -329,21 +343,26 @@
                 <p>Kindly reach out to us via the following channels:</p>
                 <div>
                     <!-- Facebook Contact -->
-                    <a href="https://facebook.com/artgabby" target="_blank">
+                    <a href="https://www.facebook.com/profile.php?id=100086473667842" target="_blank">
+
                         <div class="popup-icon facebook-logo"></div>
                         <span>Art'Gabby</span>
                     </a>
                     <!-- Gmail Contact -->
-                    <a href="mailto:artgabbythepage@gmail.com">
+                    <a href="mailto:jubrailusabo200@gmail.com">
                         <div class="popup-icon gmail-logo"></div>
-                        <span>artgabbythepage@gmail.com</span>
+                        <span>artgabbydigitals@gmail.com</span>
                     </a>
                 </div>
             </div>
         </div>
 
     </div>
-
+    <hr>
+    <div class="card-footer">
+        
+        <i><b>Date updated:</b> 29/jan/2025</i> <!--04:40PM-->
+    </div>
     <script>
         // Popup functionality
         const popup = document.getElementById("popup");
