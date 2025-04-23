@@ -1,4 +1,5 @@
-Art'Gabby Digitals
+ART'GABBY DIGITALS
+=================
 Welcome to Art'Gabby Digitals! We're a digital design studio committed to turning your creative vision into reality. Whether you need a standout logo, stunning business cards, eye-catching posters, or powerful promotional materials, we specialize in crafting designs that truly represent your brand.
 
 Our Services
