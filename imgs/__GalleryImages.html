@@ -123,6 +123,31 @@
             }
         }
     </style>
+    <style>
+        /*costomized buttom txt*/
+        .marquee-container {
+          width: 100%;
+          overflow: hidden;
+          background: rgba(15, 0, 0, 0.84);
+        }
+    
+        .marquee-text {
+          display: inline-block;
+          white-space: nowrap;
+          padding-left: 100%;
+          animation: scroll-left 30s linear infinite;
+          font-size: 15px;
+        }
+    
+        @keyframes scroll-left {
+          0% {
+            transform: translateX(0%);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+      </style>
 </head>
 <body>
     <!--main bg-->
@@ -172,12 +197,12 @@
             const img = document.createElement("img");
             img.src = `gallaryImage${i}.jpg`;
             img.className = "images";
-            img.alt = `Dynamic Image ${i}`;
+            img.alt = `Image ${i}`;
             img.onclick = () => openModal(img.src);
 
             const label = document.createElement("p");
             label.className = "image-label";
-            label.textContent = `Dynamic Label ${i}`;
+            label.textContent = `Img ${i}`;
 
             wrapper.appendChild(img);
             wrapper.appendChild(label);
@@ -206,7 +231,7 @@
 
             const label = document.createElement("p");
             label.className = "image-label";
-            label.textContent = `Static Label ${index + 1}`;
+            label.textContent = `Logo ${index + 1}`;
 
             wrapper.appendChild(img);
             wrapper.appendChild(label);
@@ -224,6 +249,9 @@
         <a href="../index.html">
             <img src="traverseIcon.png" alt="Go Back">
         </a>
+    </div>
+    <div class="marquee-container">
+        <div class="marquee-text">powered by Art'Gabby Digitals...</div>
     </div>
 </body>
 </html>
